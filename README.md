@@ -11,3 +11,9 @@ setting movieclip
 setting class
 ![Step2](https://raw.github.com/wwwins/as3-switchbutton/master/screenshots/Step2.png)
 
+### Example
+
+```
+stage.addEventListener(SwitcherEvent.CHANGE, function(e:SwitcherEvent):void { trace("output id:" + e.value); } );
+// output id:1
+```
