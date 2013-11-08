@@ -5,6 +5,8 @@ package com.flashisobar.ui
   import flash.events.Event;
   import flash.events.MouseEvent;
 
+  import com.flashisobar.events.SwitcherEvent;
+
   /**
    * quick switch button
    * Usage:
@@ -112,6 +114,8 @@ package com.flashisobar.ui
         var displayObj:DisplayObject = e.target as DisplayObject;
         _switchSelectedType = _indexSwitch = this.getChildIndex(displayObj);
         resetSwitchBtn();
+
+        dispatchEvent(new SwitcherEvent(SwitcherEvent.CHANGE, true, false, _indexSwitch));
       }
     }
 
