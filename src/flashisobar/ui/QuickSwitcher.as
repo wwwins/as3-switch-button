@@ -119,7 +119,7 @@ package com.flashisobar.ui
       }
     }
 
-    private function setSwitchBtn(__id:int):void
+    public function setSwitchBtn(__id:int):void
     {
       _indexSwitch = __id;
       _arrSwitchBtn[__id].selected = true;
