@@ -112,8 +112,12 @@ package com.flashisobar.ui
       if (e.target is Object)
       {
         var displayObj:DisplayObject = e.target as DisplayObject;
-        _switchSelectedType = _indexSwitch = this.getChildIndex(displayObj);
-        resetSwitchBtn();
+        var idx:int = this.getChildIndex(displayObj);
+        if (_indexSwitch != idx) {
+          dispatchEvent(new SwitcherEvent(SwitcherEvent.CHANGE, true, false, idx));
+          _switchSelectedType = _indexSwitch = idx;
+          resetSwitchBtn();
+        }
 
         dispatchEvent(new SwitcherEvent(SwitcherEvent.CHANGE, true, false, _indexSwitch));
       }
