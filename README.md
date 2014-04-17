@@ -14,8 +14,8 @@ as3 quick switch button controller
 ### Usage -FlashDevelop
 
 * Convert to Compiled Clip
+`Library -> QuickSwitcher -> Convert to Compiled Clip`
 
-Library -> QuickSwitcher -> Convert to Compiled Clip
 ![Step3](https://raw.github.com/wwwins/as3-switch-button/master/screenshots/Step3.png)
 ![Step4](https://raw.github.com/wwwins/as3-switch-button/master/screenshots/Step4.png)
 
